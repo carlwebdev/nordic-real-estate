@@ -1,9 +1,9 @@
-/* Slider Styles */
 .slider-container {
   position: relative;
   overflow: hidden;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  background: var(--pine);
 }
 
 .slider-track {
@@ -13,7 +13,7 @@
 
 .slide {
   min-width: 100%;
-  height: 500px;
+  height: 620px;
 }
 
 .slide img {
@@ -26,12 +26,13 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(247, 244, 238, 0.88);
+  border: 1px solid rgba(35, 55, 47, 0.15);
   border-radius: 50%;
-  font-size: 1.5rem;
+  color: var(--pine);
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +42,7 @@
 }
 
 .slider-arrow:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--paper);
 }
 
 .slider-arrow.prev {
@@ -59,23 +60,23 @@
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 34px;
+  height: 4px;
   border-radius: 50%;
-  background-color: var(--border-color);
-  margin: 0 5px;
+  background-color: rgba(35, 55, 47, 0.2);
+  margin: 0 4px;
   cursor: pointer;
   transition: var(--transition);
 }
 
 .dot.active {
-  background-color: var(--secondary-color);
+  background-color: var(--copper);
 }
 
 /* Responsive Slider */
 @media (max-width: 768px) {
   .slide {
-    height: 400px;
+    height: 420px;
   }
   
   .slider-arrow {
@@ -87,7 +88,7 @@
 
 @media (max-width: 576px) {
   .slide {
-    height: 300px;
+    height: 320px;
   }
   
   .slider-arrow {
